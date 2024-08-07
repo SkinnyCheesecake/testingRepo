@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(function(){shown()}));const shown=new IntersectionObserver((e=>{e.forEach((e=>{e.isIntersecting?e.target.classList.add("show"):e.target.classList.remove("show")}))})),hidden=document.querySelectorAll(".hidden");hidden.forEach((e=>shown.observe(e)));
